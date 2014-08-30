@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Railsgirls</title>
-  <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="//railsgirls.com/assets/bootstrap-theme.css">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
@@ -20,11 +20,12 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="/">Let's make some ideas :D </a>
+      <a class="navbar-brand" href="/">Capture the Moment </a>
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/ideas">Stash of Ideas</a></li>
+        <li class="active"><a href="/ideas">Moments</a></li>
+        <li ><%= link_to 'New Moments', new_idea_path %></li>
       </ul>
     </div>
   </div>
@@ -36,7 +37,7 @@
 
 <footer>
   <div class="container">
-    Rails Girls 2014; Created by ML
+    Created by Michelle Lam @ Rails Girls Hong Kong (30 Aug 2014)
   </div>
 </footer>
 <script src="//railsgirls.com/assets/bootstrap.js"></script>
